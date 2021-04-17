@@ -1,14 +1,16 @@
 # Revoir - A Decentralized Social Media
   A peer to peer Decentralized Photo sharing DApp on Ethereum!
 
-  ### Live Demo deployed on: sandipankundu.me/Revoir (Rinkeby Network)
+  ### Live Demo deployed on: [Revoir](sandipankundu.me/Revoir )  (Rinkeby Network)
     
+    Note: To interact with the DApp, you need to have Metamask extension installed in your browser with some test ether on rinkeby.
 ![Logo](Revoir.png)
 
 ## Features:
 1. Peer to Peer Image Sharing Platform,
 2. Censorship Resiatant from Governments & Private Entities,
-3. Secure (You handle your own data!!).
+3. Incentivizing users to post quality content with donations,
+4. Secure (You keep ownership of your own data!!) - Verifiable by Blockchain
 
 ## Technology-Used:
 * Ethereum
