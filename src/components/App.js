@@ -93,7 +93,7 @@ class App extends Component {
 
   tipImageOwner(id, tipAmount) {
     this.setState({ loading: true })
-    this.state.decentragram.methods.tipImageOwner(id).send({ from: this.state.account, value: tipAmount }).on('transactionHash', (hash) => {
+    this.state.revoir.methods.tipImageOwner(id).send({ from: this.state.account, value: tipAmount }).on('transactionHash', (hash) => {
       this.setState({ loading: false })
     })
   }
@@ -102,7 +102,7 @@ class App extends Component {
     super(props)
     this.state = {
       account: '',
-      decentragram: null,
+      revoir: null,
       images: [],
       loading: true
     }
