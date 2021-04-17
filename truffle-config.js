@@ -7,6 +7,8 @@ module.exports = {
   networks: {
     develop: {
       port: 8545
-    }
-  }
+    },
+  },
+  contracts_directory: './src/contracts/',
+  contracts_build_directory: './src/abis/',
 };
