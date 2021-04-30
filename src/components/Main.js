@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
-
+import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
 class Main extends Component {
 
   render() {
     return (
+      
       <div className="container-fluid mt-5">
         <div className="row">
           <main role="main" className="col-lg-12 ml-auto mr-auto" style={{ maxWidth: '500px' }}>
             <div className="content mr-auto ml-auto">
-              <p>&nbsp;</p>
-              <h2>Share an Image to the Decentralized World!</h2>
+              <p>&nbsp;</p>  
+              <Alert variant="success">
+              <Alert.Heading style={{size: "2px"}}>Please use either Rinkeby or Matic Mumbai Testnet</Alert.Heading>
+              </Alert>
+              <h2 id="target" style={{color: "white"}}>Share an Image to the Decentralized World!</h2>    
               <form onSubmit={(event) => {
                 event.preventDefault()
                 const description = this.imageDescription.value
@@ -27,7 +32,8 @@ class Main extends Component {
                         placeholder="Image description..."
                         required />
                   </div>
-                <button type="submit" class="btn btn-primary btn-block btn-lg">Upload!</button>
+                  <Button variant="primary" type="submit">Upload!</Button>
+                
               </form>
               <p>&nbsp;</p>
               { this.props.images.map((image, key) => {
@@ -48,11 +54,11 @@ class Main extends Component {
                         <p>{image.description}</p>
                       </li>
                       <li key={key} className="list-group-item py-2">
-                        <small className="float-left mt-1 text-muted">
+                      <Button variant="info" size="sm">
                           TIPS: {window.web3.utils.fromWei(image.tipAmount.toString(), 'Ether')} ETH
-                        </small>
-                        <button
-                          className="btn btn-link btn-sm float-right pt-0"
+                          </Button>
+                        <Button variant="success" size="sm"
+                      
                           name={image.id}
                           onClick={(event) => {
                             let tipAmount = window.web3.utils.toWei('0.1', 'Ether')
@@ -61,7 +67,7 @@ class Main extends Component {
                           }}
                         >
                           TIP 0.1 ETH
-                        </button>
+                        </Button>
                       </li>
                     </ul>
                   </div>
