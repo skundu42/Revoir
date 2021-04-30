@@ -8,7 +8,7 @@ contract('Revoir', ([deployer, author, tipper]) => {
   let revoir
 
   before(async () => {
-    revoir = await Revoir.deployed()
+    revoir = await Revoir.deployed();
   })
 
   describe('deployment', async () => {
