@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "229752e1082d71a765a8",
+    "revision": "8615636589641c7653d2",
     "url": "/Revoir/static/css/main.402900d8.chunk.css"
   },
   {
-    "revision": "229752e1082d71a765a8",
-    "url": "/Revoir/static/js/main.229752e1.chunk.js"
+    "revision": "8615636589641c7653d2",
+    "url": "/Revoir/static/js/main.86156365.chunk.js"
   },
   {
     "revision": "f90cd3fbc010a8dec52c",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/Revoir/static/media/photo.d6cbd8e6.png"
   },
   {
-    "revision": "040736d79cc34d4c2ad9ad19571d5fd6",
+    "revision": "dd0e419dda19a4b39a882608deab244a",
     "url": "/Revoir/index.html"
   }
 ];
