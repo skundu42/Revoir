@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Revoir/precache-manifest.1a8cbc8496c0c4a5c49056ade62d6d92.js"
+  "/Revoir/precache-manifest.6dbc11e2e87bf7137d3dddbb91a87cda.js"
 );
 
 workbox.clientsClaim();
